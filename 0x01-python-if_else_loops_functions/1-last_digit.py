@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 mport random
 number = random.randint(-10000, 10000)
 newNUM = number
