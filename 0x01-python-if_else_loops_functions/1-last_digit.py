@@ -7,7 +7,7 @@ if number < 0:
     number = -(number)
 
 lastDigit = number % 10
-if newNum < 0:
+if newNUM < 0:
     number = newNUM
     lastDigit = -(lastDigit)
 
