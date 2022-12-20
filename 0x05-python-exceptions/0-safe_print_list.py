@@ -9,7 +9,7 @@ def safe_print_list(my_list=[], x=0):
         try:
             print("{:d}".format(my_list[i]), end="")
             total += 1
-        except:
-            continue
+        except IndexError:
+            break
     print("")
     return (total)
