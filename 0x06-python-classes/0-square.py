@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Empty class Square that defines a Square """
+"""To Write an Empty class Square"""
+
 
 class Square:
+    """Represent a square."""
     pass
