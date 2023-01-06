@@ -10,20 +10,20 @@ Examples
 ::
 
     >>> add_integer = __import__('0-add_integer').add_integer
-    >>> add_integer(2, 3)
-    5
+    >>> add_integer(5, 7)
+    12
 
 ::
 
-    >>> add_integer(2, -3)
-    -1
+    >>> add_integer(5, -7)
+    -2
 
 The function also works with floating-point values.
 
 ::
 
-    >>> add_integer(2.0, 3.0)
-    5
+    >>> add_integer(5.0, 7.0)
+    12
 
 Note that floats are casted to ints before addition is performed.
 
@@ -48,8 +48,8 @@ The second argument is optional - by default, it is 98.
 
 ::
 
-    >>> add_integer(2)
-    100
+    >>> add_integer(12)
+    110
 
 Non-Numbers
 ===========
@@ -65,7 +65,7 @@ If either argument is a non-integer and non-float, a TypeError is raised:
 
 ::
 
-    >>> add_integer(2, "hello")
+    >>> add_integer(5, "hello")
     Traceback (most recent call last):
     TypeError: b must be an integer
 
@@ -101,7 +101,7 @@ The function will fail if infinity is provided.
 
 ::
 
-    >>> add_integer(2, float('inf'))
+    >>> add_integer(5, float('inf'))
     Traceback (most recent call last):
     OverflowError: cannot convert float infinity to integer
 
@@ -115,6 +115,6 @@ Same with NaN numbers.
 
 ::
 
-    >>> add_integer(2, float('nan'))
+    >>> add_integer(5, float('nan'))
     Traceback (most recent call last):
     ValueError: cannot convert float NaN to integer
