@@ -1,29 +1,26 @@
 Test case for 0-add_integer.py
-===========================
+==============================
+This is specifically for addition of two numbers using add_integer(a, b=98)
+Numbers can either be float or int
+The (+) is used to add the two numbers
 
-Addition function using `add_integer(a, b=98)`.
-
-Examples
-=====
-
-
+Example
+=======
 ::
 
     >>> add_integer = __import__('0-add_integer').add_integer
-    >>> add_integer(2, 3)
-    5
+    >>> add_integer(5, 7)
+    12
 
 ::
 
-    >>> add_integer(2, -3)
-    -1
-
-The function also works with floating-point values.
+    >>> add_integer(5, -7)
+    -2
 
 ::
 
-    >>> add_integer(2.0, 3.0)
-    5
+    >>> add_integer(5.0, 7.0)
+    12.0
 
 Note that floats are casted to ints before addition is performed.
 
@@ -37,8 +34,6 @@ Note that floats are casted to ints before addition is performed.
     >>> add_integer(-2.9, -0.2)
     -2
 
-Floating and non-floating point values can be combined.
-
 ::
 
     >>> add_integer(2.3, -3)
@@ -48,13 +43,13 @@ The second argument is optional - by default, it is 98.
 
 ::
 
-    >>> add_integer(2)
-    100
+    >>> add_integer(12)
+    110
 
-Non-Numbers
+Non-Digits
 ===========
 
-`add_integer()` expects that both arguments are either integers or floats.
+"add_integer()" expects that both arguments are either integers or floats.
 If either argument is a non-integer and non-float, a TypeError is raised:
 
 ::
