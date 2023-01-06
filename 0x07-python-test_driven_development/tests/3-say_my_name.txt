@@ -1,9 +1,9 @@
 Test case for 3-say_my_name.py
 ===========================
 
-This modules defines a function ``say_my_name(first_name, last_name="")``.
+Name definition using function ``say_my_name(first_name, last_name="")``.
 
-Usage
+Examples
 =====
 
 ``say_my_name(...)`` prints "My name is <first_name> <last_name>".
